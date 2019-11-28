@@ -1,6 +1,3 @@
-from random import randint
-
-
 def bubble(lst):
     len_lst = len(lst)
     i = 1
