@@ -15,5 +15,8 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-        sudo apt install nosetests
+        sudo apt install virtualenv
+        virtualenv env -p python3
+        source env/bin/activate
+        pip3 install nose
         nosetests
