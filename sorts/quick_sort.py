@@ -1,7 +1,7 @@
 from random import randrange
 
 
-def partition(lst, low, high):
+def partition(lst, low, high): # todo bug on large input sizes
     pivot = lst[high]
     i = low-1
 

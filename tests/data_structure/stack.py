@@ -1,5 +1,4 @@
 from data_structures import Stack
-import logging
 
 
 def test_stack():
@@ -7,7 +6,6 @@ def test_stack():
 
     test_array = [i for i in range(100)]
 
-    logging.getLogger('logging').info('Testing Stack')
     for i in test_array:
         f.push(i)
 
@@ -16,4 +14,4 @@ def test_stack():
     while not f.is_empty():
         result.append(f.pop())
     test_array.reverse()
-    assert  test_array == result
+    assert test_array == result
