@@ -1,6 +1,12 @@
 name: CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - 'master'
+
+  schedule:
+    - cron:  '*/15 * * * *'
 
 jobs:
   build:
@@ -20,3 +26,4 @@ jobs:
         source env/bin/activate
         pip3 install nose
         nosetests
+
